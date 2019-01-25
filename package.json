@@ -1,0 +1,19 @@
+{
+	"name": "sdries.github.io",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html","scripts": {
+		"test": "echo \"No test specified\" && exit 1",
+		"scss": "node-sass --watch _scss -o css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SDries/SDries.github.io.git"
+	},
+	"author": "Dries Sercu",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/SDries/SDries.github.io/issues"
+	},
+	"homepage": "https://github.com/SDries/SDries.github.io#readme"
+}
