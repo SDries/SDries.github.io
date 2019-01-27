@@ -1,7 +1,9 @@
 @import "reset";
+@import "variables";
+@import "mixin";
 
 html, body {
-	background: #fff;
+	background: $white;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
 	height: 100%;
 	font-size: 16px;
@@ -22,21 +24,58 @@ html, body {
 		.content {
 			height: 100%;
 			display: flex;
-		   	justify-content: center;
+			justify-content: center;
 			flex-direction: column;
+		}
+	}
+
+	@include bp-small {
+		flex-direction: column;
+		justify-content: initial;
+		align-items: initial;
+		height: initial;
+
+		.column {
+			height: initial;
+
+			.content {
+				height: initial;
+				display: block;
+				justify-content: initial;
+				flex-direction: initial;
+			}
 		}
 	}
 }
 
 .column-one {
 	width: 40%;
+	@include bp-small {
+		background: $light-blue;
+		color: $white;
+	}
 }
 .column-two {
 	width: 60%;
-	background: #4bcffa;
+	background: $light-blue;
+
+	@include bp-small {
+		background: $white;
+		color: $light-blue;
+	}
 }
 
-h1 , h2 {
+@include bp-small {
+	.column-one, .column-two {
+		width: initial;
+
+		.content {
+			padding: 30px 0;
+		}
+	}
+}
+
+h1, h2 {
 	display: block;
 	text-align: center;
 	font-weight: 700;
@@ -46,11 +85,18 @@ h1 {
 	line-height: 1em;
 	text-transform: uppercase;
 	font-weight: 300;
-}
 
+	@include bp-medium {
+		font-size: 3em;
+	}
+}
 h2 {
 	font-size: 4.2em;
 	line-height: 1em;
+
+	@include bp-medium {
+		font-size: 2.5em;
+	}
 }
 
 .contact-links {
@@ -61,25 +107,52 @@ h2 {
 	}
 	a {
 		text-decoration: none;
-		color: #fff;
+		color: $white;
 		text-align: right;
 		font-size: 2em;
 		line-height: 1.5em;
 		display: block;
 		font-weight: 300;
-		opacity: .8;
 
 		span {
 			font-size: .7em;
 			line-height: 1.5em;
 		}
+		i {
+			@include opacity(.8);
 
-		&:hover{
-			opacity: 1;
-			transition: opacity .5s ease-out;
-			-moz-transition: opacity .5s ease-out;
-			-webkit-transition: opacity .5s ease-out;
-			-o-transition: opacity .5s ease-out;
+			@include bp-medium {
+				@include opacity(1);
+			}
+
+			&:hover {
+				@include opacity(1);
+				@include transition(opacity .5s ease-out);
+			}
+		}
+	}
+
+	@include bp-small {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+
+		li {
+			padding: 0;
+		}
+
+		a {
+			padding: 0 10px;
+			color: $light-blue;
+			display: flex;
+			flex-direction: row-reverse;
+			margin-bottom: 20px;
+
+			i {
+				margin-right: 20px;
+			}
 		}
 	}
 }
