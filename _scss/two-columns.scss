@@ -1,0 +1,64 @@
+.two-column-wrapper {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+
+	.column {
+		height: 100%;
+
+		.content {
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+		}
+	}
+
+	@include bp-small {
+		flex-direction: column;
+		justify-content: initial;
+		align-items: initial;
+		height: initial;
+
+		.column {
+			height: initial;
+
+			.content {
+				height: initial;
+				display: block;
+				justify-content: initial;
+				flex-direction: initial;
+			}
+		}
+	}
+}
+
+.column-one {
+	width: 40%;
+	@include bp-small {
+		background: $light-blue;
+		color: $white;
+	}
+}
+.column-two {
+	width: 60%;
+	background: $light-blue;
+
+	@include bp-small {
+		background: $white;
+		color: $light-blue;
+	}
+}
+
+@include bp-small {
+	.column-one, .column-two {
+		width: initial;
+
+		.content {
+			padding: 30px 0;
+		}
+	}
+}
