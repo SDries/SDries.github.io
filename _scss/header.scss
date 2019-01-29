@@ -1,5 +1,5 @@
 .header {
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	@include bp-small {
 		margin-bottom: 0;
 	}
@@ -41,8 +41,4 @@
 			color: $white;
 		}
 	}
-}
-
-body.homepage .header {
-	margin-bottom: 0;
 }
