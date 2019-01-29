@@ -45,5 +45,11 @@ plugins:
 #
 # Specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _scss
-  style:            :compressed
+  sass_dir: _scss
+  style:    :compressed
+
+# jekyll-seo-tag
+twitter:
+  username: DriesSercu
+  card:
+author: Dries Sercu
