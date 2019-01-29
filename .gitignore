@@ -1,7 +1,4 @@
 css/*.css
-css/*.css.map
-node_modules
-# jekyll installation
 _site
 .sass-cache
 .jekyll-metadata
