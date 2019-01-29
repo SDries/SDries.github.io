@@ -8,13 +8,6 @@
 
 	.column {
 		height: 100%;
-
-		.content {
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-		}
 	}
 
 	@include bp-small {
@@ -25,31 +18,23 @@
 
 		.column {
 			height: initial;
-
-			.content {
-				height: initial;
-				display: block;
-				justify-content: initial;
-				flex-direction: initial;
-			}
 		}
 	}
 }
 
 .column-one {
 	width: 40%;
-	@include bp-small {
-		background: $light-blue;
-		color: $white;
-	}
+
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 .column-two {
 	width: 60%;
-	background: $light-blue;
 
-	@include bp-small {
-		background: $white;
-		color: $light-blue;
+	.content {
+		height: 100%;
 	}
 }
 

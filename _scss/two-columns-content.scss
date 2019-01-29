@@ -1,0 +1,23 @@
+h3 {
+	font-size: 9em;
+	line-height: 1em;
+	color: $light-grey;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.article {
+	padding: 0 30px;
+	font-size: 2em;
+	line-height: 1.2em;
+	text-align: center;
+}
+
+@include bp-small {
+	h3 {
+		font-size: 6em;
+	}
+	.article {
+		padding: 0 20px;
+		font-size: 1.5em;
+	}
+}

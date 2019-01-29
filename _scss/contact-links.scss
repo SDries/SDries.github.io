@@ -1,3 +1,17 @@
+.contact-links-wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	background: $light-blue;
+
+	@include bp-small {
+		background: initial;
+		color: $light-blue;
+	}
+}
+
 .contact-links {
 	width: 100%;
 

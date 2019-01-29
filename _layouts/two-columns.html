@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="two-column-wrapper">
+	<div class="column column-one">
+		{% include header.html %}
+		{% if content != "" %}
+		<div class="content">
+			{{ content }}
+		</div>
+		{% endif %}
+	</div>
+	<div class="column column-two">
+		<div class="content">
+			{% include contact-links.html %}
+		</div>
+	</div>
+</div>
