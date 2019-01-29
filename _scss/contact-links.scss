@@ -23,11 +23,10 @@
 			@include bp-medium {
 				@include opacity(1);
 			}
-
-			&:hover {
-				@include opacity(1);
-				@include transition(opacity .3s ease-out);
-			}
+		}
+		&:hover i {
+			@include opacity(1);
+			@include transition(opacity .3s ease-out);
 		}
 	}
 
