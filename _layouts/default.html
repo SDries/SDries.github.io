@@ -27,7 +27,8 @@
 	{% endif %}
 </head>
 
-<body class="{{ page.bodyClass }}">
+<body
+{% if page.bodyClass %} class="{{ page.bodyClass }}"{% endif %}>
 	{{ content }}
 </body>
 
