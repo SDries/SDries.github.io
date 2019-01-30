@@ -19,16 +19,17 @@
 			line-height: 1em;
 			text-transform: uppercase;
 			font-weight: 300;
-
-			@include bp-medium {
-				font-size: 3em;
-			}
 		}
 		h2 {
 			font-size: 4.2em;
 			line-height: 1em;
+		}
 
-			@include bp-medium {
+		@include bp-medium {
+			h1 {
+				font-size: 3em;
+			}
+			h2 {
 				font-size: 2.5em;
 			}
 		}
