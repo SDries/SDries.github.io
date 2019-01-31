@@ -16,11 +16,15 @@ layout: one-column
 		</h3>
 		<h4>{{ post.date | date: "%d-%m-%Y" }}</h4>
 		<div class="text">
-			<p>{{ post.excerpt }}</p>
+			<p>{{ post.excerpt | truncate: 200 }}</p>
 		</div>
 		<a href="{{ post.url }}">Read all about it</a>
 		<div class="clearfix"></div>
 	</div>
+	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+	{% if thecycle == 'even' %}
+	<div class="clearfix"></div>
+	{% endif %}
 	{% endfor %}
 	<div class="clearfix"></div>
 </div>
