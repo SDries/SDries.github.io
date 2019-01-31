@@ -37,12 +37,12 @@
 
 			&.active {
 				$border-width: 14px;
-				border-right: $white solid $border-width;
+				border-right: transparent solid $border-width;
 				border-left: $white solid $border-width;
 			}
 			&:hover {
 				$border-width: 18px;
-				border-right: $white solid $border-width;
+				border-right: transparent solid $border-width;
 				border-left: $white solid $border-width;
 				@include transition(border-width .1s ease-out);
 			}
