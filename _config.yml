@@ -53,3 +53,12 @@ twitter:
   username: DriesSercu
   card:
 author: Dries Sercu
+
+# # Where things are
+# collections_dir     : .
+# collections:
+#   posts:
+#     output          : true
+
+# Outputting
+timezone            : Europe/Brussels
