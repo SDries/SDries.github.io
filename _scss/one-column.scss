@@ -43,6 +43,7 @@
 					$border-width: 18px;
 					border-right: transparent solid $border-width;
 					border-left: $white solid $border-width;
+					background: $light-blue;
 					@include transition(border-width .1s ease-out);
 				}
 			}
@@ -146,21 +147,21 @@
 				align-items: center;
 				height: 100%;
 				a {
-					color: $black;
-					border-style: solid;
-					border-color: $light-blue;
-					border-bottom-width: 8px;
+					$border-width: 8px;
+					$vertical-padding: 14px;
+					padding: $vertical-padding 15px ($vertical-padding - $border-width);
+					border-bottom: $border-width solid $light-blue;
+					color: $white;
 					border-top: none;
 					border-left: none;
 					border-right: none;
 					width: auto;
 					margin: 0 auto;
-					padding-left: 15px;
-					padding-right: 15px;
 
 					&.active, &:hover {
 						border-left: none;
 						border-right: none;
+						background-color: $white;
 						color: $light-blue;
 					}
 				}

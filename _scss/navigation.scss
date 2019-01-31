@@ -6,20 +6,20 @@
 
 	a {
 		$border-width: 8px;
+		$vertical-padding: 20px;
 		text-decoration: none;
-		color: $black;
-		padding: 20px 15px 25px;
+		padding: $vertical-padding 15px ($vertical-padding - $border-width);
+		border-bottom: $border-width solid $light-blue;
 		font-size: 3em;
 		line-height: 1em;
 		display: inline-block;
 		font-weight: 300;
-		border-style: solid;
-		border-color: $light-blue;
-		border-top-width: $border-width;
-		border-bottom-width: $border-width;
+		background: $light-blue;
+		color: $white;
+		text-transform: uppercase;
 
 		&:hover {
-			@include transition(color .2s ease-out);
+			background-color: $white;
 			color: $light-blue;
 		}
 	}
