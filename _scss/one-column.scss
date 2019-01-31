@@ -22,56 +22,56 @@
 				}
 			}
 		}
-	}
-	.navigation {
-		flex-direction: column;
+		.navigation {
+			flex-direction: column;
 
-		a {
-			color: $white;
-			padding: 10px 0 15px;
-			text-align: center;
-			width: 100%;
-			border-color: transparent;
-			font-size: 2em;
-			border: none;
+			a {
+				color: $white;
+				padding: 10px 0 15px;
+				text-align: center;
+				width: 100%;
+				border-color: transparent;
+				font-size: 2em;
+				border: none;
 
-			&.active {
-				$border-width: 14px;
-				border-right: transparent solid $border-width;
-				border-left: $white solid $border-width;
-			}
-			&:hover {
-				$border-width: 18px;
-				border-right: transparent solid $border-width;
-				border-left: $white solid $border-width;
-				@include transition(border-width .1s ease-out);
+				&.active {
+					$border-width: 14px;
+					border-right: transparent solid $border-width;
+					border-left: $white solid $border-width;
+				}
+				&:hover {
+					$border-width: 18px;
+					border-right: transparent solid $border-width;
+					border-left: $white solid $border-width;
+					@include transition(border-width .1s ease-out);
+				}
 			}
 		}
-	}
-	.contact-links-wrapper {
-		height: initial;
-		background: initial;
+		.contact-links-wrapper {
+			height: initial;
+			background: initial;
 
-		.contact-links {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			li {
-				padding: 0;
-			}
-			a {
-				font-size: 1em;
+			.contact-links {
 				display: flex;
-				flex-direction: row-reverse;
-				margin-bottom: 20px;
-
-				i {
-					font-size: 1.5em;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				li {
+					padding: 0;
 				}
-				span {
+				a {
 					font-size: 1em;
-					margin-left: 10px;
+					display: flex;
+					flex-direction: row-reverse;
+					margin-bottom: 20px;
+
+					i {
+						font-size: 1.5em;
+					}
+					span {
+						font-size: 1em;
+						margin-left: 10px;
+					}
 				}
 			}
 		}
@@ -92,28 +92,28 @@
 					}
 				}
 			}
-		}
-		.navigation {
-			a {
-				font-size: 1.5em;
+			.navigation {
+				a {
+					font-size: 1.5em;
 
-				&.active {
-					$border-width: 8px;
-					border-right-width: $border-width;
-					border-left-width: $border-width;
-				}
-				&:hover {
-					$border-width: 10px;
-					border-right-width: $border-width;
-					border-left-width: $border-width;
+					&.active {
+						$border-width: 8px;
+						border-right-width: $border-width;
+						border-left-width: $border-width;
+					}
+					&:hover {
+						$border-width: 10px;
+						border-right-width: $border-width;
+						border-left-width: $border-width;
+					}
 				}
 			}
-		}
-		.contact-links a {
+			.contact-links-wrapper .contact-links a {
 
-			padding: 5px 15px;
-			span {
-				display: none;
+				padding: 5px 15px;
+				span {
+					display: none;
+				}
 			}
 		}
 	}
@@ -139,35 +139,35 @@
 					padding: 10px 0;
 				}
 			}
-		}
-		.navigation {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-			a {
-				color: $black;
-				border-style: solid;
-				border-color: $light-blue;
-				border-bottom-width: 8px;
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				width: auto;
-				margin: 0 auto;
-				padding-left: 15px;
-				padding-right: 15px;
-
-				&.active, &:hover {
+			.navigation {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				a {
+					color: $black;
+					border-style: solid;
+					border-color: $light-blue;
+					border-bottom-width: 8px;
+					border-top: none;
 					border-left: none;
 					border-right: none;
-					color: $light-blue;
+					width: auto;
+					margin: 0 auto;
+					padding-left: 15px;
+					padding-right: 15px;
+
+					&.active, &:hover {
+						border-left: none;
+						border-right: none;
+						color: $light-blue;
+					}
 				}
 			}
-		}
-		.contact-links-wrapper {
-			display: none;
+			.contact-links-wrapper {
+				display: none;
+			}
 		}
 	}
 
