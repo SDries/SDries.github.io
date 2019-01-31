@@ -1,14 +1,15 @@
 .content-wrapper {
-	width: 70%;
+	max-width: 70%;
 	margin: 0 auto;
 	padding: 40px 0;
+	flex: 1;
 
 	@include bp-large {
-		width: 80%;
+		max-width: 80%;
 	}
 	@include bp-small {
 		padding: 0;
-		width: 95%;
+		max-width: 95%;
 	}
 
 	@import "post-list";
