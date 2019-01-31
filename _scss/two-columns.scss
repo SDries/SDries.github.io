@@ -15,10 +15,10 @@
 		flex-direction: column;
 		justify-content: initial;
 		align-items: initial;
-		height: initial;
+		min-height: initial;
 
 		.column {
-			height: initial;
+			flex: initial;
 		}
 	}
 
@@ -26,22 +26,22 @@
 }
 
 .column-one {
-	width: 40%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	max-width: 40%;
 }
 .column-two {
-	width: 60%;
+	max-width: 60%;
 
 	.content {
 		height: 100%;
+		@include bp-small {
+			height: initial;
+		}
 	}
 }
 
 @include bp-small {
 	.column-one, .column-two {
-		width: initial;
+		max-width: initial;
 
 		.content {
 			padding: 30px 0;
