@@ -1,0 +1,11 @@
+<div class="button-wrapper">
+	{% if include.githublink %}
+	<a class="button" href="{{ include.githublink }}">View Source</a>
+	{% endif %}
+	{% if include.bitbucketlink %}
+	<a class="button" href="{{ include.bitbucketlink }}">View Source</a>
+	{% endif %}
+	{% if include.demolink %}
+	<a class="button" href="{{ include.demolink }}">View Demo</a>
+	{% endif %}
+</div>

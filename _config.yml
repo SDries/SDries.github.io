@@ -54,11 +54,14 @@ twitter:
   card:
 author: Dries Sercu
 
-# # Where things are
-# collections_dir     : .
-# collections:
-#   posts:
-#     output          : true
-
 # Outputting
 timezone            : Europe/Brussels
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
