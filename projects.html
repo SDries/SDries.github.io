@@ -3,20 +3,24 @@ description: These are my projects.
 title: Projects
 layout: one-column
 ---
-{% for post in site.posts %}
-<div class="article">
-	<a href="{{ post.url }}" class="image-thumbnail">
-		<img src="{{ post.thumbnail }}" alt="{{ post.title }}"/>
-	</a>
-	<h3>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	</h3>
-	<h4>{{ post.date | date: "%d-%m-%Y" }}</h4>
-	<div class="text">
-		<p>{{ post.excerpt }}</p>
+<div class="post-list">
+	{% for post in site.posts %}
+	<div class="post">
+		{% if post.thumbnail %}
+		<a href="{{ post.url }}" class="image-thumbnail">
+			<img src="{{ post.thumbnail }}" alt="{{ post.title }}"/>
+		</a>
+		{% endif %}
+		<h3>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</h3>
+		<h4>{{ post.date | date: "%d-%m-%Y" }}</h4>
+		<div class="text">
+			<p>{{ post.excerpt }}</p>
+		</div>
+		<a href="{{ post.url }}">Read all about it</a>
+		<div class="clearfix"></div>
 	</div>
-	<a href="{{ post.url }}">Read all about it</a>
+	{% endfor %}
 	<div class="clearfix"></div>
 </div>
-{% endfor %}
-<div class="clearfix"></div>

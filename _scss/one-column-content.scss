@@ -3,86 +3,14 @@
 	margin: 0 auto;
 	padding: 40px 0;
 
-	.article {
-		margin: 0 0 40px;
-		padding: 20px 20px 0;
-		border-top: 5px solid $light-blue;
-		color: $black;
-
-		h3 {
-			font-weight: 700;
-			font-size: 2em;
-			line-height: 1.2em;
-			margin-bottom: 5px;
-
-			a {
-				text-decoration: none;
-				color: $dark-grey;
-			}
-		}
-		h4 {
-			font-size: 1em;
-			line-height: 1.1em;
-			color: $light-grey;
-			margin-bottom: 10px;
-		}
-
-		.text {
-			line-height: 1.3em;
-			margin-bottom: 20px;
-		}
-
-		a {
-			color: $dark-grey;
-			display: block;
-
-			&.image-thumbnail {
-				float: left;
-				margin-right: 20px;
-				margin-bottom: 15px;
-				@include border-radius(4px);
-				overflow: hidden;
-
-				img {
-					max-width: 200px;
-					max-height: 200px;
-				}
-			}
-		}
-	}
-
 	@include bp-large {
 		width: 80%;
-
-		.article {
-			width: 47%;
-			float: left;
-			margin-right: 1.5%;
-			margin-left: 1.5%;
-		}
 	}
 	@include bp-small {
 		padding: 0;
 		width: 95%;
-
-		.article {
-			border-top: none;
-			border-bottom: 3px solid $light-blue;
-			padding: 0 0 10px;
-			margin-bottom: 20px;
-
-			h3 {
-				font-size: 1.5em;
-			}
-			h4 {
-				font-size: 0.7em;
-				color: $grey;
-			}
-			a {
-				&.image-thumbnail {
-					display: none
-				}
-			}
-		}
 	}
+
+	@import "post-list";
+	@import "post-article";
 }
