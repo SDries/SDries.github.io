@@ -1,0 +1,30 @@
+---
+description: These are my projects.
+title: Projects
+layout: one-column
+---
+<div class="post-list">
+	{% for post in site.posts %}
+	<div class="post">
+		{% if post.thumbnail %}
+		<a href="{{ post.url }}" class="image-thumbnail">
+			<img src="{{ post.thumbnail | replace: '-SITE_URL-', site.url }}" alt="{{ post.title }}"/>
+		</a>
+		{% endif %}
+		<h3>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</h3>
+		<h4>{{ post.date | date: "%d-%m-%Y" }}</h4>
+		<div class="text">
+			<p>{{ post.excerpt | truncate: 200 }}</p>
+		</div>
+		<a href="{{ post.url }}">Read all about it</a>
+		<div class="clearfix"></div>
+	</div>
+	{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+	{% if thecycle == 'even' %}
+	<div class="clearfix"></div>
+	{% endif %}
+	{% endfor %}
+	<div class="clearfix"></div>
+</div>

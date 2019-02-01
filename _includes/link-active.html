@@ -1,0 +1,9 @@
+<a href="{{ site.url }}/{{ include.href }}"
+{% if page.path == include.href %}
+class="{{ include.class }} active"
+{% else %}
+class="{{ include.class }}"
+{% endif %}
+>
+{{ include.content }}
+</a>

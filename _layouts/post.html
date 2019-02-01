@@ -1,0 +1,25 @@
+---
+layout: one-column
+---
+<div class="post">
+	<h1>{{ page.title }}</h1>
+	<p class="date">{{ page.date | date: "%d-%m-%Y" }}</p>
+	<p class="excerpt">{{ page.excerpt }}</p>
+
+	{% if page.thumbnail %}
+		{% if page.demolink %}
+			<a href="{{ page.demolink }}" class="thumbnail-link">
+		{% endif %}
+			<img src="{{ page.thumbnail | replace: '-SITE_URL-', site.url }}" alt="{{ page.title }}" class="thumbnail"/>
+		{% if page.demolink %}
+			</a>
+		{% endif %}
+	{% endif %}
+
+	{% include post-buttons-wrapper.html %}
+
+	{{ content }}
+
+	{% include post-buttons-wrapper.html %}
+	{% include contact-links.html %}
+</div>

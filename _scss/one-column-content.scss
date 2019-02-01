@@ -1,0 +1,17 @@
+.content-wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 40px 0;
+	flex: 1;
+
+	@include bp-large {
+		max-width: 80%;
+	}
+	@include bp-small {
+		padding: 0;
+		max-width: 95%;
+	}
+
+	@import "post-list";
+	@import "post-article";
+}

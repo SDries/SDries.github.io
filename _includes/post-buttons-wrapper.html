@@ -1,0 +1,7 @@
+{% if page.githublink or page.bitbucketlink or page.demolink %}
+	{% include post-buttons.html
+		githublink=page.githublink
+		bitbucketlink=page.bitbucketlink
+		demolink=page.demolink
+	%}
+{% endif %}

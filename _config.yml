@@ -53,3 +53,15 @@ twitter:
   username: DriesSercu
   card:
 author: Dries Sercu
+
+# Outputting
+timezone            : Europe/Brussels
+
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

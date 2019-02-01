@@ -1,49 +1,50 @@
 .two-column-wrapper {
 	display: flex;
 	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
+	min-height: 100%;
 
 	.column {
-		height: 100%;
+		flex: 1;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	@include bp-small {
 		flex-direction: column;
 		justify-content: initial;
 		align-items: initial;
-		height: initial;
+		min-height: initial;
 
 		.column {
+			flex: initial;
+		}
+	}
+
+	@import "two-columns-content";
+}
+
+.column-one {
+	max-width: 40%;
+}
+.column-two {
+	max-width: 60%;
+
+	.content {
+		height: 100%;
+		@include bp-small {
 			height: initial;
 		}
 	}
 }
 
-.column-one {
-	width: 40%;
-
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-.column-two {
-	width: 60%;
-
-	.content {
-		height: 100%;
-	}
-}
-
 @include bp-small {
 	.column-one, .column-two {
-		width: initial;
+		max-width: initial;
 
 		.content {
-			padding: 30px 0;
+			padding: 20px 0;
 		}
 	}
 }

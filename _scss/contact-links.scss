@@ -1,14 +1,16 @@
-.contact-links-wrapper {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+.one-column-wrapper .header, .two-column-wrapper .column-two {
+	.contact-links-wrapper {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 
-	background: $light-blue;
+		background: $light-blue;
 
-	@include bp-small {
-		background: initial;
-		color: $light-blue;
+		@include bp-small {
+			background: initial;
+			color: $light-blue;
+		}
 	}
 }
 
