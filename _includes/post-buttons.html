@@ -1,11 +1,20 @@
 <div class="button-wrapper">
 	{% if include.githublink %}
-	<a class="button" href="{{ include.githublink }}">View Source</a>
+	<a class="button" href="{{ include.githublink }}">
+		<i class="fab fa-github-square"></i>
+		View Source
+	</a>
 	{% endif %}
 	{% if include.bitbucketlink %}
-	<a class="button" href="{{ include.bitbucketlink }}">View Source</a>
+	<a class="button" href="{{ include.bitbucketlink }}">
+		<i class="fab fa-bitbucket"></i>
+		View Source
+	</a>
 	{% endif %}
 	{% if include.demolink %}
-	<a class="button" href="{{ include.demolink }}">View Demo</a>
+	<a class="button" href="{{ include.demolink }}">
+		<i class="fas fa-play"></i>
+		View Demo
+	</a>
 	{% endif %}
 </div>
