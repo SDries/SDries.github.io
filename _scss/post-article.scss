@@ -9,6 +9,10 @@
 		color: $dark-grey;
 		line-height: 1.4em;
 		text-align: center;
+
+		@include bp-medium {
+			font-size: 3.5em;
+		}
 	}
 	h2 {
 		font-weight: 300;
@@ -63,6 +67,14 @@
 		max-width: 100%;
 		@include border-radius(4px);
 		overflow: hidden;
+
+		@include bp-medium {
+			max-height: 300px;
+		}
+
+		@include bp-small {
+			max-height: 200px;
+		}
 	}
 
 	.button-wrapper {
