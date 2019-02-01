@@ -111,6 +111,32 @@
 		list-style-position: inside;
 	}
 
+
+	.contact-links {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		font-size: 0.8em;
+
+		li {
+			padding: 0;
+			list-style: none;
+		}
+
+		a {
+			padding: 0 10px;
+			color: $light-blue;
+			display: flex;
+			flex-direction: row-reverse;
+			margin-bottom: 20px;
+
+			span {
+				margin-left: 20px;
+			}
+		}
+	}
+
 	@include bp-small {
 		h1 {
 			font-size: 2em;
