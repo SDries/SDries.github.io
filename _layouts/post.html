@@ -10,7 +10,7 @@ layout: one-column
 		{% if page.demolink %}
 			<a href="{{ page.demolink }}" class="thumbnail-link">
 		{% endif %}
-			<img src="{{ page.thumbnail }}" alt="{{ page.title }}" class="thumbnail"/>
+			<img src="{{ page.thumbnail | replace: '-SITE_URL-', site.url }}" alt="{{ page.title }}" class="thumbnail"/>
 		{% if page.demolink %}
 			</a>
 		{% endif %}

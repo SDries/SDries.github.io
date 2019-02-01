@@ -8,7 +8,7 @@ layout: one-column
 	<div class="post">
 		{% if post.thumbnail %}
 		<a href="{{ post.url }}" class="image-thumbnail">
-			<img src="{{ post.thumbnail }}" alt="{{ post.title }}"/>
+			<img src="{{ post.thumbnail | replace: '-SITE_URL-', site.url }}" alt="{{ post.title }}"/>
 		</a>
 		{% endif %}
 		<h3>
