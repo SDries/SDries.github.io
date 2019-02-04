@@ -12,7 +12,7 @@
 	</a>
 	{% endif %}
 	{% if include.demolink %}
-	<a class="button" href="{{ include.demolink }}">
+	<a class="button" href="{{ include.demolink | replace: '-SITE_URL-', site.url }}">
 		<i class="fas fa-play"></i>
 		View Demo
 	</a>
