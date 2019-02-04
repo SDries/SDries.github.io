@@ -34,7 +34,7 @@
 		font-size: 1.2em;
 		line-height: 1.4em;
 		margin-bottom: 20px;
-		font-family: 'Oswald', Arial, Helvetica, sans-serif;
+		font-family: 'Oswald';
 	}
 
 	a {
@@ -76,6 +76,13 @@
 			max-height: 200px;
 		}
 	}
+	.post-image {
+		p {
+			text-align: center;
+			font-weight: 300;
+			font-family: 'Oswald';
+		}
+	}
 
 	.button-wrapper {
 		text-align: center;
@@ -112,6 +119,14 @@
 		margin-bottom: 20px;
 		line-height: 1.5em;
 		font-family: arial, sans-serif;
+	}
+	p.quote {
+		font-family: 'Oswald';
+		font-size: 1.2em;
+		font-weight: 700;
+		color: $dark-grey;
+		text-align: center;
+		padding: 0 20px;
 	}
 
 	ul {

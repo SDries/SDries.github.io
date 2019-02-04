@@ -1,0 +1,3 @@
+[submodule "projects/vanilla-js-calculator"]
+	path = projects/vanilla-js-calculator
+	url = https://bitbucket.org/Dries_Sercu/vanilla-js-calculator
