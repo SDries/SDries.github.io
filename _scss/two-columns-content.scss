@@ -11,6 +11,47 @@ h3 {
 	line-height: 1.2em;
 	text-align: center;
 }
+img.avatar {
+	$widthPercentage: 65%;
+	max-width: $widthPercentage;
+	margin-left: -$widthPercentage / 2 ;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -49%;
+	@include border-radius(50%);
+	border: $black 15px solid;
+
+	@include bp-large {
+		$widthPercentage: 75%;
+		max-width: $widthPercentage;
+		margin-left: -$widthPercentage / 2 ;
+		border-width: 20px;
+	}
+	@include bp-huge {
+		$width: 900px;
+		max-width: $width;
+		margin-left: -$width / 2 ;
+		border-width: 25px;
+		top: 50%;
+		margin-top: - round($width/1.7);
+	}
+	@include bp-medium {
+		$widthPercentage: 60%;
+		max-width: $widthPercentage;
+		margin-left: -$widthPercentage / 2 ;
+		border-width: 10px;
+	}
+	@include bp-small {
+		$widthPercentage: 60%;
+		width: $widthPercentage;
+		margin: 0 ((100 - $widthPercentage) / 2) 20px;
+		position: relative;
+		top: 0;
+		left: 0;
+		border-width: 7px;
+	}
+}
 
 @include bp-small {
 	h3 {

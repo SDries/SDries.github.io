@@ -4,14 +4,10 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-
-		background: $light-blue;
-
-		@include bp-small {
-			background: initial;
-			color: $light-blue;
-		}
 	}
+}
+.column-two .contact-links-wrapper{
+	position: relative;
 }
 
 .contact-links {

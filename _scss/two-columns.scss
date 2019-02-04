@@ -10,6 +10,14 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+	.column-two {
+		background: $light-blue;
+
+		@include bp-small {
+			background: initial;
+			color: $light-blue;
+		}
+	}
 
 	@include bp-small {
 		flex-direction: column;
@@ -30,6 +38,7 @@
 }
 .column-two {
 	max-width: 60%;
+	position: relative;
 
 	.content {
 		height: 100%;
