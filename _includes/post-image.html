@@ -1,0 +1,6 @@
+<div class="post-image">
+	<img src="{{ include.image-link | replace: '-SITE_URL-', site.url }}" />
+	{% if include.image-description %}
+	<p>{{ include.image-description }}</p>
+	{% endif %}
+</div>
