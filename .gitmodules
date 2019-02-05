@@ -1,3 +1,6 @@
 [submodule "projects/vanilla-js-calculator"]
 	path = projects/vanilla-js-calculator
 	url = https://bitbucket.org/Dries_Sercu/vanilla-js-calculator
+[submodule "projects/vanilla-canvas-spheres"]
+	path = projects/vanilla-canvas-spheres
+	url = https://bitbucket.org/Dries_Sercu/vanilla-js-canvas-spheres
