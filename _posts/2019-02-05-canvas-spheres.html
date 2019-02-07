@@ -7,9 +7,9 @@ bitbucketlink: "https://bitbucket.org/Dries_Sercu/vanilla-js-canvas-spheres"
 demolink: "-SITE_URL-/projects/vanilla-canvas-spheres/index.html"
 ---
 <p>
-	Inspired by a bed sheet from Ikea I wanted to make a small app that copied the look. You can use it as a screensaver too!
+	Inspired by a bed sheet from IKEA, I wanted to make a small application that copied the look. You can use it as a screensaver too!
 	Having a visual result of the code I wrote was very rewarding.
-	And what should have been a small experiment ended up taking more of my time than I anticipated because I was enjoying myself.
+	What should have been a small experiment ended up taking more of my time than I anticipated because I was enjoying myself.
 </p>
 
 {% include post-image.html image-link="-SITE_URL-/images/canvas-spheres-inspiration.jpg" image-description="The IKEA Smörboll bed sheets." %}
@@ -17,19 +17,19 @@ demolink: "-SITE_URL-/projects/vanilla-canvas-spheres/index.html"
 <h2>Canvas</h2>
 
 <p>
-	Using the canvas element it is possible to draw and animate shapes using javascript.
+	Using the canvas element enables you to draw and animate shapes using javascript.
 </p>
 <p>
 	So, what does it do?
 </p>
 <p>
-	The application will draw sphers (circles) in multiple rows.
+	The application will draw spheres in multiple rows.
 	For example: one row of 10 spheres starting at the Y-position 0.
 	The size of the spheres is dependent on the amount of space available.
 	This means that when the page resizes, the spheres will be smaller to make sure the requested amount fit within the row.
 </p>
 <p>
-	Using this logic several rows of spheres are used to fill the page.
+	Using this logic, several rows of spheres are used to fill the page.
 	The last rows are filled with 60 spheres each until the bottom of the page is reached.
 </p>
 <p>
@@ -38,9 +38,9 @@ demolink: "-SITE_URL-/projects/vanilla-canvas-spheres/index.html"
 	At random some spheres will be skipped (you can see this by refreshing the page).
 </p>
 <p>
-	When the spheres are drawn the application remembers if a sphere was skipped and what color the drawn spheres have.
+	When the spheres are drawn, the application remembers if a sphere was skipped and what color the drawn spheres have.
 	Because of this, resizing the page (which requires redrawing the spheres) results in the same drawing but smaller or bigger.
-	If the application wouldn't remember the spheres redrawing them would give you a different result everytime.
+	If the application couldn't remember the spheres, redrawing them would give you a different result everytime.
 </p>
 
 <h2>Skins</h2>
@@ -48,15 +48,15 @@ demolink: "-SITE_URL-/projects/vanilla-canvas-spheres/index.html"
 <p>
 	It would be boring having just black spheres on a white canvas, the solution: colors.
 	I chose some colors and put them into skins.
-	Skins have a name, backgroundcolor and several colors for the spheres.
+	Skins have a name, background color and several colors for the spheres.
 </p>
 <p>
-	If no backgroundcolor is provided a random color will be chosen from the sphere colors.
+	If no background color is provided, a random color will be chosen from the sphere colors.
 	That color will no longer be available for the spheres.
 	An example of this is the bubblegum skin (select it using the controls in the bottom left and refresh the page).
 </p>
 <p>
-	When a sphere is drawn a random color is selected from the skin's sphere colors.
+	When a sphere is drawn, a random color is selected from the skin's sphere colors.
 </p>
 
 {% include post-image.html image-link="-SITE_URL-/images/canvas-spheres-skins.png" image-description="The available skins at this point." %}
@@ -80,16 +80,16 @@ demolink: "-SITE_URL-/projects/vanilla-canvas-spheres/index.html"
 	Whenever a sphere hits the edge of the screen it will bounce off and continue at the same speed but in a different direction.
 </p>
 <p>
-	Using the controls in the bottom left you can select an animation and see it all in action.
+	Using the controls in the bottom left, you can select an animation and see it all in action.
 	Resizing the screen will result in a reset of the animations.
 </p>
 
 <h2>Controls</h2>
 
 <p>
-	Because I made several settings available and I felt it would be more fun to display them in one page rather than a couple some controls were required.
+	Because I made several settings available and I felt it would be more fun to display them in one page rather than a couple, some controls were required.
 	You can hide the controls using the little button at the top right.
-	Now you know what I mean by skins and animations, the selectboxes are fairly self explanatory.
+	Now you know what I mean by skins and animations, the select boxes are fairly self-explanatory.
 </p>
 <p>
 	Changing the selected option will redraw all the spheres.
