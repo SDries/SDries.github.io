@@ -1,11 +1,47 @@
 ---
 title: Checkers
 thumbnail: -SITE_URL-/images/react-checkers.jpg
-excerpt: "(Coming soon) A checkers game made using React."
+excerpt: "A checkers game made using React and Redux."
 # githublink: "#"
 bitbucketlink: "https://bitbucket.org/Dries_Sercu/react-checkers"
 demolink: "https://sdries-react-checkers.herokuapp.com/"
 ---
 <p>
-	I'm working on the article as we speak. Feel free to already check out the code and the game.
+	When I decided to learn react, like most people I ended up following along with the <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">tutorial on their website</a>. The result is also publicly available <a href="https://bitbucket.org/Dries_Sercu/react-tutorial-tic-tac-toe" target="_blank">here</a>, however rather dull.
+</p>
+<p>
+	Because I wanted to have some fun when learning the react basics I decided to make a checkers game.
+	This has been a very educational project when it came to react and even redux (which was new to me).
+</p>
+<h2>Playing the game</h2>
+<p>
+	The rules and colorscheme are based on <a href="https://en.wikipedia.org/wiki/Draughts" target="_blank">this wikipedia page</a>.
+	The white player (player A) is the first to make a move.
+	Each player can move their pieces by selecting them and then clicking/tapping the square they want to move/jump to.
+</p>
+<h2>React</h2>
+<p class="quote">A JavaScript library for building user interfaces.</p>
+<p>
+	To build the interface (current player label, board and squares) I used React and sass.
+	This combination makes for a really comfortable development environment.
+</p>
+<p>
+	Splitting up the application into multiple smaller reusable components became a breeze and a lot of fun.
+</p>
+<p>
+	It is possible to take it all a step further and make everything less hardcoded. For example, the game currently only allows for an 8x8 board size. For the purposes of getting to know react however, I felt it wasn't necessary.
+</p>
+<h2>Redux</h2>
+<p class="quote">A predictable state container for JavaScript apps.</p>
+<p>
+	At first all the game's rules were managed by the checkers component. And to a certain extent they still are, but when I learned about redux I had to implement it.
+</p>
+<p>
+	Redux manages the state and all state changes. That means the code can be split in two parts, React knows how to display a checkers game, Redux knows what information is required for the game. Redux will tell React how many pieces are on the board, whether they are kings or men, whether they must jump and whether they are selected. The React side will just take that data (state) and display it.
+</p>
+<p>
+	Whenever a square is clicked React tell Redux what needs to happen and Redux tells React what's changed in the state.
+</p>
+<p>
+	It took some adjusting in the way I approached the application but it's nice and clear once it's set up properly.
 </p>
