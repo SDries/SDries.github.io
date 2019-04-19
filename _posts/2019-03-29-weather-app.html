@@ -1,0 +1,25 @@
+---
+title: Weather App
+thumbnail: -SITE_URL-/images/dark-sky-thumbnail.png
+excerpt: "A Weather app that uses an express backend to relay weather data from the DarkSky API to a React frontend."
+githublink: "https://github.com/SDries/sdries-darksky"
+# bitbucketlink: "#"
+demolink: "https://sdries-darksky.herokuapp.com"
+---
+<p>
+	This application allows a user to view the observed (in the past 30 days) or forecasted (in the future) daily weather conditions for a given location (the user's current location).
+</p>
+<p>
+	I will document all of the technical aspects of the application in the Github readmes.
+	There's one file pertaining to the back- and one to the frontend of the application.
+</p>
+<h2>In summary</h2>
+<p>
+	Briefly stated, the application works as follows:
+</p>
+<ol>
+	<li>The user's location is requested(using the geolocation web API).</li>
+	<li>The location data is passed to an express backend on the server.</li>
+	<li>This backend will fetch weather data for that location from the <a href="https://darksky.net/dev" target="_blank">dark sky API</a>.</li>
+	<li>This weather data is then passed from the backend to the React frontend and displayed to the user.</li>
+</ol>
