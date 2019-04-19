@@ -4,6 +4,3 @@
 [submodule "projects/vanilla-canvas-spheres"]
 	path = projects/vanilla-canvas-spheres
 	url = https://bitbucket.org/Dries_Sercu/vanilla-js-canvas-spheres
-[submodule "projects/react-checkers"]
-	path = projects/react-checkers
-	url = https://bitbucket.org/Dries_Sercu/react-checkers
